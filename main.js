@@ -9,23 +9,23 @@ navOpen.addEventListener('click', () => {
 })
 
 /* Close navigation menu */
-navClose.addEventListener('click', ()=> {
-     navMenu.classList.remove('nav__menu--open')
+navClose.addEventListener('click', () => {
+    navMenu.classList.remove('nav__menu--open')
 })
 
 navItem.forEach(item => {
     item.addEventListener('click', () => {
-         navMenu.classList.remove('nav__menu--open')
+        navMenu.classList.remove('nav__menu--open')
     })
 })
 
 // Header scroll
 const header = document.getElementById('l-header')
 
-window.addEventListener('scroll', () =>{
-    if (window.scrollY > 50){
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
         header.classList.add('l-header--scroll')
-    }else{
+    } else {
         header.classList.remove('l-header--scroll')
     }
 })

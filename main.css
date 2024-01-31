@@ -393,7 +393,7 @@ body {
 }
 
 .about__body {
-  
+
   margin-bottom: 4rem;
 }
 
@@ -466,7 +466,7 @@ body {
 }
 
 .portfolio__title {
-  margin: 2rem 0 3rem 0;  
+  margin: 2rem 0 3rem 0;
 }
 
 /* 9. Project section
@@ -674,6 +674,7 @@ body {
 }
 
 @media screen and (min-width: 668px) {
+
   .services__wrapper,
   .portfolio__wrapper {
     grid-template-columns: repeat(2, max-content);
@@ -681,6 +682,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
   .home__wrapper,
   .about__wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -716,6 +718,7 @@ body {
 }
 
 @media screen and (min-width: 968px) {
+
   .services__wrapper,
   .portfolio__wrapper {
     grid-template-columns: repeat(3, max-content);
