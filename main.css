@@ -429,7 +429,12 @@ body {
   max-width: 600px;
   transition: var(--transition);
 }
-
+.service__card:hover {
+  transform: translateX(0.8rem);
+  box-shadow: var(--shadow);
+  background-color: var(--color-primary);
+  color:var(--color-white);
+}
 
 .service__icon {
   display: block;
