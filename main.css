@@ -406,6 +406,8 @@ body {
   justify-self: center;
   background-color: var(--bg-light);
   box-shadow: var(--shadow);
+  text-align: justify;
+  text-justify: auto;
   padding: 2rem 2rem;
   width: 100%;
   max-width: 600px;
