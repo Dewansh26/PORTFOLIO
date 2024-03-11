@@ -352,13 +352,14 @@ body {
 /* 6. About section
 ----------------------------------------------------------------------------
 */
-#about{
+#about {
   /* height: 100vh; */
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
+
 .stats {
   order: 1;
 }
@@ -415,7 +416,6 @@ body {
   background-color: var(--bg-light);
   box-shadow: var(--shadow);
   text-align: justify;
-  text-rendering: geometricPrecision;
   text-justify: auto;
   padding: 2rem 2rem;
   width: 100%;
@@ -475,7 +475,7 @@ body {
 
 .service__ul {
   text-align: justify;
- 
+
 }
 
 /* 8. Portfolio section
@@ -508,12 +508,13 @@ body {
 ----------------------------------------------------------------------------
 */
 
-#project{
-  height: 100vh;
+#project {
+  height: 100%;
   display: flex;
   justify-content: center;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
+
 .project__wrapper {
   background-color: var(--color-primary-dark);
   width: 100%;
@@ -711,7 +712,7 @@ body {
 
 @media screen and (min-width: 580px) {
   .contact__list {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(1, max-content);
   }
 }
 
@@ -737,6 +738,10 @@ body {
 @media screen and (min-width: 768px) {
   .services__wrapper {
     grid-template-columns: repeat(1, max-content);
+  }
+
+  .about__description {
+    text-align: justify;
   }
 }
 
@@ -769,11 +774,6 @@ body {
   text-align: initial;
 }
 
-.contact__list {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-
 @media screen and (min-width: 968px) {
   .services__wrapper {
     grid-template-columns: repeat(2, max-content);
@@ -784,5 +784,9 @@ body {
 
   .portfolio__wrapper {
     grid-template-columns: repeat(3, max-content);
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
