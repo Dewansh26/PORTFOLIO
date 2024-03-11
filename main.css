@@ -439,15 +439,24 @@ body {
 }
 
 .service__icon {
-  display: block;
-  margin-bottom: 1rem;
+  display: grid;
+  /* margin-bottom: rem; */
   font-size: 3rem;
   color: var(--color-white);
 }
 
+.service__icon img{
+  /* display: block; */
+  justify-self: center;
+}
+
+
 .service__title {
   font-size: var(--fs-lg);
   margin-bottom: 3rem;
+}
+.service__ul{
+  text-align: justify;
 }
 
 /* 8. Portfolio section
@@ -726,7 +735,14 @@ body {
 
 @media screen and (min-width: 968px) {
 
-  .services__wrapper,
+  .services__wrapper
+   {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media screen and (min-width: 968px) {
+
   .portfolio__wrapper {
     grid-template-columns: repeat(3, max-content);
   }
